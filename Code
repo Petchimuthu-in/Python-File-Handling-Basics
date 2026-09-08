@@ -1,0 +1,15 @@
+# Writing data into a file
+with open("learning.txt", "w") as file:
+    file.write("Python\n")
+    file.write("Pandas\n")
+    file.write("Generative AI\n")
+    file.write("java\n")
+
+print("Data written successfully!")
+
+# Reading data from the file
+with open("learning.txt", "r") as file:
+    content = file.read()
+
+print("\nFile Content:")
+print(content)
